@@ -12,7 +12,7 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
+  databaseURI: databaseUri || 'mongodb://heroku_dcqnn157:testddnmvfe1lr335f5ik14v9q@ds145780.mlab.com:45780/heroku_dcqnn157',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'reviewerrParse',
   masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
